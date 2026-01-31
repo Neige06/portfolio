@@ -1,0 +1,209 @@
+/* GLOBAL */
+
+/* Polices necessaire */
+@font-face {
+	font-family: 'azonix';
+    src: url('/fonts/azonix.ttf') format('truetype');
+}
+
+/* Polices */
+/* Important */
+h1, #haut {
+    font-family: 'azonix', sans-serif; 
+}
+
+/*Commun*/
+h2, section, footer, .liens, .bas {
+    font-family: 'bahnschrift', sans-serif;
+}
+
+/* Couleur de fond */
+body {
+	background-color: #f8f5f2;
+}
+
+
+
+
+/* Couleur des textes */
+/* Important */
+h1 {
+	color: #7e0011;
+}
+
+/* Commun */
+section, h2 {
+	color: #363636;
+}
+
+
+nav ul {
+    list-style: none;    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 1em;            
+}
+
+
+/* Couleur des liens */
+/* Liens généraux */
+
+section a:link,
+section a:visited {
+    color: #1E90FF;
+}
+
+/* Liens du menu */
+.liens a {
+    color: white;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #1f16c6; 
+}
+
+/* Liens du bas */
+.bas a:link,
+.bas a:visited {
+    color: #1E90FF;
+}
+
+.bas a:hover {
+    color: #1f16c6;
+}
+
+
+
+
+/* Taille des textes */
+/* Important */
+h1, #haut {
+    font-size: 2.0625em; 
+}
+
+/* Sous-titre */
+h2 {
+    font-size: 1.5625em; 
+}
+
+/* Commun */
+section, .liens {
+    font-size: 1.25em; 
+}
+
+
+
+/* Alignement */
+/* Général */
+header, section {
+	padding-left: 2.5em;  
+    padding-right: 2.5em; 
+    padding-top: 0;        
+    padding-bottom: 2em;    
+}
+
+/* Commun */
+body {
+	margin: 0 auto;
+	line-height: 1.6;
+}
+
+/* Centrer (Important et liens) */
+nav, h1, h2, #livres {
+    text-align: center;
+	margin: auto;
+}
+
+/* Multimédias */
+img {
+	display: flex;
+	border-radius: 0.5em; 
+    object-fit: cover;
+	margin: auto; 
+}
+
+.video {
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* BOITES */
+/* Navigation */
+nav {
+    padding: 0.8em;
+    border-bottom: 0.2em solid #700005;
+    background-color: #A70008;
+    margin-bottom: 3.8em;
+}
+
+#haut {
+	color: #2A0001;
+}
+	
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0.2em;
+    border-top: 0.14em solid #700005;
+    background-color: #A70008;
+    font-size: 1.06em;
+    font-weight: bold;
+	color: #2A0001;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+/* Espace entre mes contacts */
+#Contact a:first-of-type {
+    margin-right: 2em; 
+}
+
+
+
+/* Fondu d'entrée si je met une bannière */
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+}
+
+
+
+
+.banniere {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+
+
+
+/* Crédits */
+figure {
+    display: block;
+    text-align: center;
+    margin: 1.25em auto; 
+	font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#imageLivre {
+  width: 800px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}

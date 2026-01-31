@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+	<link href="ma_feuille_de_style.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="faviconn.png" />
+</head>
+   
+   
+   
+   <body>
+
+<nav>
+<H2 id=haut>Menu de navigation</H2>
+<ul>
+  <li class="liens"><a href="#Présentation">Présentation</a></li>
+  <li class="liens"><a href="#Compétence">Compétence</a></li>
+  <li class="liens"><a href="mes_projets.html">Mes projets</a></li>
+  <li class="liens"><a href="#Scolarité">Scolarité</a></li>
+  <li class="liens"><a href="#Contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<header>
+<h2> Nejma NEBTI
+<br>
+Etudiante en développement web</h2>
+<br><h1>Vous avez maintenant un petit bout de moi entre les doigts</h1>
+</header>
+
+
+<br>
+<section>
+Hello word ! Et bienvenue sur mon portfolio. Je me nomme Nejma et c'est au fil de ces pages que vous allez me découvrir.  Touchée par l’art et fascinée par Internet, je me suis donce mise à explorer le web, ce lieu où l’imagination devient interface, pour explorer ce lien entre créativité et numérique.
+</section>
+
+
+<!-- Image tulipes-->
+<img
+	src="multimedias/image-fleur_article1.png"
+	alt="Tuplie rouge et blanche"
+	title="Tulipe"
+	width="950"
+	height="400"
+/>
+<figure>
+	<figcaption>de Nigel Cohen sur Unsplash</figcaption>
+</figure>
+<br>
+<br>
+
+<br>
+<section>
+<h3 id="Présentation">Présentation</h3>
+Je me présente, je m’appelle Nejma, j’ai 19ans et et je suis passionnée par la création web et le développement web. De mon temps libre j’aime lire autant des mangas que de la littérature classique, et je ne me suis jamais contentée de simplement observer, car j’écris également de la poésie. L’art étant pour moi l’essence de la vie, je me suis essayée à diverses formes dès mon enfance : le dessin, la création de peluches, la création graphique…Ces activités m’ont permise de développer ma créativité, tout en travaillant ma patience. Pourtant je ne dédiais pas ma vie à mes hobbys car parallèlement. J’ai toujours ressenti ce besoin de réussir et de me dépasser, alors j'ai toujours été une élève très scolaire avec de bons résultats. Grâce à mes efforts, j'ai pu maintenir une moyenne générale d'environ de 15, avec les meilleurs résultats de ma classe en spécialité au lycée. 
+</section>
+
+<section id="livres">
+  <img id="imageLivre" src="" alt="Image de livre aléatoire" width="400">
+    <button id="btnLivre">Afficher une image</button>
+  <br><br>
+</section>
+
+<br>
+<section>
+<h3 id="Compétence">Mes compétences</h3>
+Voici une liste non exhaustive des compétences étudiées dans le cadre de ma formation :
+<ul>
+<li>Création de sites web via : WIX et les langage HTML 5/CSS3</li>
+<li>Écrire un algorithme, manipuler ses variables, ses données et utiliser des structures de contrôle via PYTHON</li>
+<li>Optimiser du contenu en vue du SEO</li>
+<li>Intervenir et gérer techniquement un serveur destiné à héberger un projet web</li>
+<li>Installer, paramétrer et dépanner WordPress sur un serveur</li>
+<li>Repérer, comprendre et luttercontre les failles de sécurité de WordPress</li>
+</ul>
+</section>
+
+<!-- Image langages informatique-->
+<img
+	src="multimedias/langages.jpg"
+	alt="logo HTML5, CSS3, PYTHON"
+	title="Langages informatique"
+	width="500"
+	height="200"
+/>
+
+<section>
+<h3> Mes projets</h3>
+<a href="mes_projets.html">Veuillez cliquez-ici pour voir plus en détails mes projets !<a>
+</section>
+
+<section>
+<h3 id="Scolarité">Ma scolarité</h3>
+<ul>
+  <li>
+    2024<br>
+    Bac général — Mention « Assez Bien »<br>
+    Spécialités : Mathématiques, Sciences humaines et sociales, Humanités, littérature et philosophie<br>
+  </li>
+<br>
+  <li>
+    2024–2025<br>
+    IUT Jean-Moulin<br>
+    B.U.T Information-Communication<br>
+    Parcours : Communication des organisations<br>
+  </li>
+<br>
+  <li>
+    2025–2027<br>
+    Université de Limoges<br>
+    DEUST : Webmaster et métiers de l'internet<br>
+
+<p>
+En quelques mots :<br>
+J'ai été acceptée au lycée que je désirais et je me suis orientée en filière générale avec les spécialités mathématiques, S.E.S et H.L.P pour finalement passer un bac SES et HLP. 
+J'ai ensuite été accepté dans la filière que je souhaitais le plus rejoindre: le B.U.T Information-communication à Lyon3. J'ai réussi l'année avec succès et fait un stage chez Arrivetz, une entreprise de mobilier design de haute gamme. Mais je ne me suis pas vue en faire mon métier et les enseignements de développement web reçu au cours de l’année m’avaient beaucoup plu, alors je me suis réorientée et j'ai de nouveau été acceptée dans la filière qui correspondait parfaitement à mes ambitions : le DEUST Webmaster et métiers de l'internet à l'Université de Limoges.
+</p>
+</section>
+<br>
+
+
+<p class="bas">
+  <a href="#haut">Cliquez ici pour remonter en haut de la page</a>
+</p>
+
+
+
+<footer>
+<p id="Contact"> 
+Pour me contacter :
+<br>
+Par mail:<a href="mailto:Nej-@outlook.fr" target="_blank">Nej-@outlook.fr</a>
+Et via Github: <a href="https://github.com/Neige06" target="_blank">Mon Github</a>  
+</p>
+</footer>
+  
+
+<script>
+const bouton = document.getElementById("btnLivre");
+const image = document.getElementById("imageLivre");
+
+const apiKey = "ssb2SqSVTKsulHyw0A67wfjKyU9G1VvaOtq6nWriKN4";
+
+bouton.addEventListener("click", () => {
+  fetch(`https://api.unsplash.com/photos/random?query=book&client_id=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+      image.src = data.urls.regular;
+      image.alt = data.alt_description || "Photo de livre";
+    })
+    .catch(error => {
+      console.error(error);
+    });
+});
+</script>
+
+   </body>
+</html>
