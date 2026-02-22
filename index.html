@@ -141,21 +141,26 @@ Et via Github: <a href="https://github.com/Neige06" target="_blank">Mon Github</
 <script>
 const bouton = document.getElementById("btnLivre");
 const image = document.getElementById("imageLivre");
-
 const apiKey = "ssb2SqSVTKsulHyw0A67wfjKyU9G1VvaOtq6nWriKN4";
 
-bouton.addEventListener("click", () => {
+function chargerImage() {
   fetch(`https://api.unsplash.com/photos/random?query=book&client_id=${apiKey}`)
     .then(response => response.json())
     .then(data => {
-      image.src = data.urls.regular;
-      image.alt = data.alt_description || "Photo de livre";
+      if (data.urls) {
+        image.src = data.urls.regular;
+        image.alt = data.alt_description || "Photo de livre";
+      }
     })
     .catch(error => {
-      console.error(error);
+      console.error("Erreur :", error);
     });
-});
-</script>
+}
+
+bouton.addEventListener("click", chargerImage);
+
+document.addEventListener("DOMContentLoaded", chargerImage);
+</script>>
 
    </body>
 </html>
