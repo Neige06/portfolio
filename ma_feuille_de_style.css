@@ -81,7 +81,7 @@ a:hover {
 /* Taille des textes */
 /* Important */
 h1, #haut {
-    font-size: 2.0625em; 
+    font-size: 2.000em; 
 }
 
 /* Sous-titre */
@@ -140,10 +140,16 @@ img {
 /* BOITES */
 /* Navigation */
 nav {
-    padding: 0.8em;
+    padding: 0.3em;
     border-bottom: 0.2em solid #700005;
     background-color: #A70008;
     margin-bottom: 3.8em;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 #haut {
